@@ -373,17 +373,22 @@ body{
         
     }
 
-    #texto-resultado, .noResultado, .noResultado img{
-        width: 100%;
-        margin: 0% auto;
-        
-        
-
-    }
-
     #texto-resultado{
         width: 90%;
+        margin: 0% auto;
+        text-align: center;
+
     }
+
+    .noResultado, .noResultado img{
+        width: 90%;
+        padding-left: 1em;
+        
+        
+
+    }
+
+ 
 
     
 
