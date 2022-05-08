@@ -14,6 +14,7 @@ botonDesencriptar.addEventListener("click", function(){
 
     var ningunMensaje = document.querySelector(".noResultado");
 
+    var errores = validar(textoUsuario);
 
     var desencriptar = textoUsuario.value;
     var desencriptarMensaje = 
@@ -24,7 +25,10 @@ botonDesencriptar.addEventListener("click", function(){
     .replaceAll("ober", "o")
     .replaceAll("ufat", "u");
 
-    textoResultado.value = desencriptarMensaje;
+    if(errores.length > 0){
+        textoResultado.value = desencriptarMensaje;
+
+    }
 
     /*Desaparecer y aparecer la imagen del muneco y el boton copiar*/
     
@@ -48,3 +52,14 @@ botonCopiar.addEventListener("click", function(){
     navigator.clipboard.writeText(mensajeEncriptado);
 })
 
+
+/* VALIDADOR */
+
+function validar (textoUsuario){
+    var errores = [];
+
+    if (textoUsuario.length == 0){
+        errores.push(+1);
+    }
+    return errores;
+}

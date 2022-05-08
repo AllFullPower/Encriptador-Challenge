@@ -16,7 +16,7 @@ textoNulo.classList.add("esconder");
 /*ENCRIPTAR*/
 botonEncriptar.addEventListener("click", function(){
 
-    if(textoResultado.value == ""){
+    if(textoUsuario.value == 0){
         
         fondoNegro.classList.remove("esconder");
         textoNulo.classList.remove("esconder");

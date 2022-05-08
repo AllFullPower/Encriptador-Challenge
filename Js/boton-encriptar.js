@@ -15,6 +15,7 @@ botonEncriptar.addEventListener("click", function(){
 
     
     var ningunMensaje = document.querySelector(".noResultado");
+    var errores = validarPaciente(textoUsuario);
 
     var encriptar = textoUsuario.value;
     var encriptarMensaje = 
@@ -25,7 +26,10 @@ botonEncriptar.addEventListener("click", function(){
     .replaceAll("o", "ober")
     .replaceAll("u", "ufat");
 
-    textoResultado.value = encriptarMensaje;
+    if(errores.length > 0){
+        textoResultado.value = encriptarMensaje;
+
+    }
 
     /*Desaparecer y aparecer la imagen del muneco y el boton copiar*/
 
