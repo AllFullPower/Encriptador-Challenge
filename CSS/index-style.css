@@ -1,0 +1,329 @@
+body{
+    
+    background:linear-gradient(rgb(251, 244, 255) 50px, rgba(210, 193, 220, 0.855));
+    
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+
+/* NAVIO Y LOGO*/
+.navio{
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 5em;
+    position: relative;
+    background-color: rgb(251, 244, 255);
+    
+}
+
+.navio-contenido{
+    top:2em;
+    left: 2em;
+    position: absolute;
+    
+}
+
+/*CONTENIDO INTERACCION CON EL USUARIO*/
+
+
+.area-textos{
+    width: 1300px;
+    height: 720px;
+    margin: 5em auto;
+    padding: 2em auto;
+    text-align: center;
+
+    
+}
+
+#contenedora-texto{
+
+    position: relative;
+    width: 45%;
+    height: 680px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+
+#contenedora-resultado{
+    
+    position: relative;
+    width: 45%;
+    height: 680px;
+    float: right;
+    display: block;
+    box-sizing: border-box;
+    
+}
+
+
+#texto-usuario{
+    border: 0ch;
+    border-color: rgba(187, 185, 188, 0.855) ;
+    border-radius: 15px;
+    background-color: rgba(203, 189, 211, 0);
+    height: 68%;
+    width: 70%;
+    text-align: center;
+    font-size: 3em;
+    vertical-align: top;
+    resize: none;
+    color:rgb(169, 75, 188);
+    margin-top: 4em;
+    
+
+}
+
+.lapiz-escribiendo{
+    background-image: url("logos/icono-escritura.png");
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
+    background-position: 450px 400px;
+}
+
+#texto-usuario::placeholder{
+    color: rgb(169, 75, 188);
+    font-weight:300;
+}
+
+#texto-resultado{
+    border: 0ch;
+    border-color: rgba(237, 223, 244, 0.855) ;
+    border-radius: 15px;
+    background-color: rgb(223, 210, 231);
+    height: 90%;
+    width: 80%;
+    text-align: center;
+    font-size: 3em;
+    resize: none;
+    box-shadow: 5px 5px 10px 3px rgb(34, 29, 34);
+}
+
+.esconder{
+    display: none;
+}
+
+.noResultado{
+    position: absolute;
+    width: 589px;
+    height: 548px;
+    top: 0px;
+    padding: 2px;
+  
+
+}
+
+.noResultado, img{
+    margin-top: 10px;
+}
+
+.noResultado, h2{
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.noResultado, p{
+    font-size: 20px;
+    padding-top: 10px;
+    padding: 2px;
+}
+
+.botones-criptadores{
+    color: white;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 2em;
+    width: 10em;
+    height: 5em;    
+  
+   
+}
+
+
+#encriptar{
+    border: 0px solid rgb(199, 80, 220) ;
+    background-color: rgb(169, 75, 188);
+    
+
+}
+
+
+#encriptar:hover{
+    background-color: rgb(210, 173, 218);
+    transition: 500ms;
+    
+}
+
+#encriptar:active{
+    border: 2px solid rgb(217, 56, 245) ;
+    background-color: rgb(165, 69, 184);
+    
+    
+}
+
+
+#desencriptar{
+    
+    color: rgb(169, 75, 188);
+    border-color:rgb(169, 75, 188);
+    background-color: rgba(240, 248, 255, 0.15);
+}
+
+#desencriptar:hover{
+    background-color:rgba(30, 26, 30, 0.197);
+    transition: 500ms;
+}
+
+#desencriptar:active{
+    border-color:rgb(73, 33, 81);
+    background-color: antiquewhite;
+}
+
+.boton-copiar{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 4em;
+    width: 10em;
+    height: 5em;
+    border-radius: 18px;
+    background-color: rgb(169, 138, 200);
+    border-color: white;
+    transition: 500ms;
+    
+}
+
+.boton-copiar:hover{
+    background-color: rgb(136, 113, 159);
+}
+
+/*    FOTEER    */
+
+.pie-pagina{
+    text-align: center;
+    margin: 3em;
+    padding-top: 3em;
+}
+
+.pie-pagina, p{
+    margin: 1em;
+    font-weight: 700;
+    color: rgb(175, 149, 176);
+}
+.pie-pagina-texto{
+    color: rgb(42, 40, 40);
+    padding: 10px;
+    
+}
+
+.contacto, li{
+    display:inline;
+    margin: 1em;
+}
+
+.caja{
+
+    border: 3px black solid;
+    border-radius: 10px;
+   
+
+}
+
+.pie-pagina, legend{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(119, 100, 120);
+}
+
+.pie-legend{
+    padding: 30px;
+    font-size: 20px;
+}
+
+/* VALIDADOR */
+
+
+.alerta-nulo{
+  
+    width: 600px;
+    height: 350px;
+    background-color: rgba(65, 37, 66, 0.821);
+    box-shadow: 0px 0px 10px 10px rgba(185, 32, 147, 0.832), inset 0px 0px 5px 5px rgb(191, 41, 158);
+    position: fixed;
+    margin-left: 17%;
+    border: 3px solid rgb(255, 53, 245);
+    border-radius: 15px;
+    background-image: url("logos/nyancat.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 245px 150px;
+    transform: scale(0.2);
+    z-index: 20;
+    
+   
+
+}
+
+.animacion{
+    
+    transition: 500ms;
+    transform: scale(1.0);
+    
+}
+
+.texto-nulo{
+    color: rgb(240, 231, 240);
+}
+
+
+
+.boton-ok{
+    position: relative;
+    margin-top: 28%;
+    width: 10em;
+    height: 3em;
+    background-color: rgb(130, 44, 119);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 3px rgb(167, 59, 153) solid ;
+    color: aliceblue;
+
+}
+
+.boton-ok:hover{
+    background-color: rgb(167, 59, 153);
+    color:rgb(112, 112, 113) ;
+    
+}
+
+.boton-ok:active{
+    transform: scale(1.2);
+    color: rgb(228, 17, 155);
+}
+
+/*Cubierta negra*/
+
+.fondo-negro{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 10;
+}

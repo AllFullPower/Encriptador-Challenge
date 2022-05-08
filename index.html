@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <title> Encriptador </title>
+        <link rel = "stylesheet" href="CSS/reset.css">
+        <link rel = "stylesheet" href="CSS/index-style.css">
+
+        <link rel="icon" href = "Images/Logos/Icon-page.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@100;300&family=Poppins:wght@300&family=Sora:wght@300&display=swap" rel="stylesheet">
+                
+    </head>
+
+    
+   
+    <body>
+        
+
+        
+        <header>
+            
+            <nav class = "navio">
+
+                <div class = "navio-contenido">
+                    <h1 class = "icono-alura"> <img src="Images/Logos/Vector.png"> </h1>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            
+
+            <section class ="area-textos">
+
+
+
+                <div class="cajas-texto" id = "contenedora-texto">
+                  
+                    <textarea id = "texto-usuario" placeholder="Escribe tu mensaje"></textarea>
+
+                    <legend> ⚠ Solo letras minusculas y sin acentos.</legend>
+                    <button class="botones-criptadores" id="encriptar">Encriptar</button>
+                    <button class="botones-criptadores" id="desencriptar">Desencriptar</button>
+
+                </div>
+                
+                <div class="cajas-texto" id = "contenedora-resultado">
+                    
+                    <textarea  id = "texto-resultado" readonly></textarea>
+
+                    <div class = "noResultado">
+                        <img  src="CSS/logos/munheco.png">
+                        <h2> Sin resultados...</h2>
+                        <p> Intenta escribir algo </p>
+
+                    </div>
+                    <button class="boton-copiar" id="boton-copiar">copiar</button>
+
+                </div>
+                
+
+                
+
+
+                <div class="alerta-nulo" id="texto-nulo">
+                    <p class="texto-nulo"> Por favor escriba su mensaje en el campo correspondiente para realizar el proceso, no utilices mayusculas ni acentos :3 </p>
+                    <button class="boton-ok" id="boton-ok"> OK </button>
+                </div>
+
+                <div class="fondo-negro" id="fondo-negro">
+
+
+                </div>
+
+            
+
+            </section>
+
+        
+        </main>
+
+        
+
+        <footer class="pie-pagina">
+
+            <legend class="pie-legend"> Contacto: </legend>
+
+            <ul class="contacto">
+
+                <li><a href="https://www.instagram.com/jeff_69r/?hl=es-la" target="_blank"> 
+                    <img class="caja" src="Images/Logos/Instagram.png" alt="Instagram">  
+
+                    </a></li>
+
+                <li><a href="https://www.linkedin.com/in/jeff-roj-a9bb18239/" target="_blank">
+                    <img class="caja" src="Images/Logos/Linkedin.png" alt="Linkedin">
+
+                </a></li>
+                
+                <li><a href="https://github.com/AllFullPower" target="_blank">
+                    <img class="caja" src="Images/Logos/GitHub-logo.png" alt="GitHub">
+
+                </a></li>
+
+
+            </ul>
+
+            <p class="pie-pagina-texto"> Correo: Jeffrojasu@gmail.com</p>
+            <p class="pie-pagina-texto"> © CopyRight - Jefferson Rojas - 2022 </p>
+
+        </footer>
+ 
+        <script src="Js/boton-encriptar.js"></script>
+        <script src="Js/boton-desencriptar.js"></script>
+        <script src="Js/animacion-escritura.js"></script>
+        <script src="Js/validador.js"></script>
+    
+
+    </body>
+
+
+    
+
+
+</html>
