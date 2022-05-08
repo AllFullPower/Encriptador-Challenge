@@ -435,7 +435,23 @@ body{
     .alerta-nulo{
         width:auto;
         margin: 0 auto;
+        background-image: url("logos/nyancat.png");
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: 175px 150px;
         
+    }
+
+    .fondo-negro{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: black;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        z-index: 10;
+        filter: alpha(opacity = 50);
     }
 
 
