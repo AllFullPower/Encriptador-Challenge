@@ -28,7 +28,8 @@ botonDesencriptar.addEventListener("click", function(){
     if(errores.length > 0){
         ningunMensaje.classList.remove("esconder");
         botonCopiar.classList.add("esconder");
-        return textoResultado.value = "";
+        textoUsuario.value = "";
+        return textoResultado.value = ""
     }else{
         textoResultado.value = desencriptarMensaje;
     }

@@ -326,3 +326,102 @@ body{
     z-index: 10;
     filter: alpha(opacity = 50);
 }
+
+
+/* DISENHO RESPOSNSIVO*/
+
+@media screen and (max-width:480px){
+    .navio{
+        width: auto;
+    }
+
+    .area-textos{
+        width: auto;
+        text-align: center;
+        
+        
+    }
+    
+    #contenedora-texto{
+        width: auto;
+        margin: 0 auto;
+        
+        
+        
+    }
+
+    #contenedora-resultado, #texto-usuario{
+        margin: 0 auto;
+        width: auto;
+        
+        
+    }
+
+    .cajas-texto legend{
+        margin-bottom: 2em;
+    }
+
+    #contenedora-resultado{
+        width: auto;
+        margin: 0 auto;
+        margin-top: 5em;
+        margin-left: 20px;
+        height: 80%;
+        
+    }
+
+    #texto-resultado, .noResultado, .noResultado img{
+        width: 100%;
+        margin: 0% auto;
+        
+        
+
+    }
+
+    
+
+
+    .botones-criptadores{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .boton-copiar{
+
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1em;
+        
+    }
+
+    
+
+    .pie-pagina, .pie-pagina-texto, .pie-legend, .contacto, .contacto li, .contacto img, .pie-pagina-texto{
+        width: auto;
+        margin: 0 auto;
+        margin-top: 2em;
+        height: 100%;
+       
+    }
+
+    .contacto img{
+        width: 80%;
+    }
+
+    .pie-legend{
+        margin-top: 600px;
+    }
+
+    .alerta-nulo{
+        width:auto;
+        margin: 0 auto;
+        
+    }
+
+
+
+
+}
