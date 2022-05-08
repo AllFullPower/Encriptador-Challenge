@@ -15,7 +15,7 @@ botonEncriptar.addEventListener("click", function(){
 
     
     var ningunMensaje = document.querySelector(".noResultado");
-    var errores = validarPaciente(textoUsuario);
+    var errores = validar(textoUsuario);
 
     var encriptar = textoUsuario.value;
     var encriptarMensaje = 
@@ -27,6 +27,10 @@ botonEncriptar.addEventListener("click", function(){
     .replaceAll("u", "ufat");
 
     if(errores.length > 0){
+        ningunMensaje.classList.remove("esconder");
+        botonCopiar.classList.add("esconder");
+        return textoResultado.value = "";
+    }else{
         textoResultado.value = encriptarMensaje;
 
     }
@@ -45,14 +49,12 @@ botonEncriptar.addEventListener("click", function(){
         botonCopiar.classList.add("esconder");
         
         
-        
-        
-
-
-        
     }
     
-})
+    
+});
+
+    
 
 
 

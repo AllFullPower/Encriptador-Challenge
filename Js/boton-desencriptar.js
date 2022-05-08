@@ -26,8 +26,11 @@ botonDesencriptar.addEventListener("click", function(){
     .replaceAll("ufat", "u");
 
     if(errores.length > 0){
+        ningunMensaje.classList.remove("esconder");
+        botonCopiar.classList.add("esconder");
+        return textoResultado.value = "";
+    }else{
         textoResultado.value = desencriptarMensaje;
-
     }
 
     /*Desaparecer y aparecer la imagen del muneco y el boton copiar*/
@@ -58,7 +61,7 @@ botonCopiar.addEventListener("click", function(){
 function validar (textoUsuario){
     var errores = [];
 
-    if (textoUsuario.length == 0){
+    if (textoUsuario.value == 0){
         errores.push(+1);
     }
     return errores;

@@ -163,7 +163,6 @@ body{
 
 #encriptar:hover{
     background-color: rgb(210, 173, 218);
-    transition: 500ms;
     
 }
 
@@ -184,7 +183,6 @@ body{
 
 #desencriptar:hover{
     background-color:rgba(30, 26, 30, 0.197);
-    transition: 500ms;
 }
 
 #desencriptar:active{
@@ -326,4 +324,5 @@ body{
     left: 0;
     opacity: 0.6;
     z-index: 10;
+    filter: alpha(opacity = 50);
 }

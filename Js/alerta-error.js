@@ -8,17 +8,22 @@ var textoNulo = document.getElementById("texto-nulo");
 
 var textoNuloBoton = document.getElementById("boton-ok");
 
-var fondoNegro = document.getElementById("fondo-negro");
+var cuerpo = document.querySelector("body");
 
-fondoNegro.classList.add("esconder");
+
+
+
+
 textoNulo.classList.add("esconder");
 
 /*ENCRIPTAR*/
 botonEncriptar.addEventListener("click", function(){
 
-    if(textoUsuario.value == 0){
+    if(textoResultado.value == ""){
+
         
-        fondoNegro.classList.remove("esconder");
+        crearCaja();
+
         textoNulo.classList.remove("esconder");
         setTimeout(function(){
             
@@ -29,12 +34,11 @@ botonEncriptar.addEventListener("click", function(){
 })
 
 textoNuloBoton.addEventListener("click", function(){
-    textoNulo.classList.remove("esconder");
-    fondoNegro.classList.remove("ensenar");
     
-
+    borrarCaja();
+    
     setTimeout(function(){
-
+        textoNulo.classList.add("esconder")
         textoNulo.classList.remove("animacion");
     }, 10)
 })
@@ -45,7 +49,9 @@ textoNuloBoton.addEventListener("click", function(){
 botonDesencriptar.addEventListener("click", function(){
     if(textoResultado.value == ""){
 
-        fondoNegro.classList.remove("esconder");
+
+        crearCaja();
+
         textoNulo.classList.remove("esconder");
         setTimeout(function(){
             
@@ -55,16 +61,32 @@ botonDesencriptar.addEventListener("click", function(){
     }
 })
 
+
 textoNuloBoton.addEventListener("click", function(){
     
-
+    borrarCaja();
     setTimeout(function(){
-        fondoNegro.classList.add("esconder");
         textoNulo.classList.add("esconder");
         textoNulo.classList.remove("animacion");
 
     }, 10)
 })
+
+/* FONDO NEGRO */
+
+function crearCaja(){
+    var caja = document.createElement("div");
+    caja.setAttribute("id", "fondo-negro")
+    caja.setAttribute("class", "fondo-negro")
+    
+    
+    return cuerpo.appendChild(caja);
+}
+
+function borrarCaja(){
+    document.body.removeChild(document.getElementById("fondo-negro"));
+}
+
 
 
 
