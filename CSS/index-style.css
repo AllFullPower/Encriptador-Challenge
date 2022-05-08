@@ -357,6 +357,10 @@ body{
         
     }
 
+    #texto-usuario{
+        width: 90%;
+    }
+
     .cajas-texto legend{
         margin-bottom: 2em;
     }
@@ -365,7 +369,6 @@ body{
         width: auto;
         margin: 0 auto;
         margin-top: 5em;
-        margin-left: 6%;
         height: 80%;
         
     }
@@ -376,6 +379,10 @@ body{
         
         
 
+    }
+
+    #texto-resultado{
+        width: 90%;
     }
 
     
@@ -404,7 +411,7 @@ body{
         margin: 0 auto;
         margin-top: 2em;
         height: 100%;
-        margin-left: 2%;
+        
        
     }
 
